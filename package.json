@@ -1,0 +1,27 @@
+{
+  "name": "purefabrication",
+  "version": "1.0.0",
+  "description": "[![Чистая выдумка / Pure Fabrication](https://img.youtube.com/vi/CV577a0RHBM/0.jpg)](https://www.youtube.com/watch?v=CV577a0RHBM)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HowProgrammingWorks/PureFabrication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HowProgrammingWorks/PureFabrication/issues"
+  },
+  "homepage": "https://github.com/HowProgrammingWorks/PureFabrication#readme",
+  "dependencies": {
+    "@types/node": "^16.11.12",
+    "@types/sqlite3": "^3.1.7",
+    "sqlite3": "^5.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  }
+}
