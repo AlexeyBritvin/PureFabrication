@@ -1,9 +1,9 @@
-class PersonRepository {
+class DbSaveStrategy {
   constructor(db) {
     this.db = db;
   }
 
-  async createTable() {
+  async init() {
     const sql = `
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -14,11 +14,13 @@ class PersonRepository {
     return await this.db.run(sql);
   }
 
-  insertData() {
+  async save({ name, surname }) {
     const sql = `
-      INSERT INTO users 
+      INSERT INTO users (name, surname) VAlUES (${name}, ${surname})
     `;
+
+    return await this.db.run(sql);
   }
 }
 
-module.exports = { PersonRepository };
+module.exports = DbSaveStrategy;
